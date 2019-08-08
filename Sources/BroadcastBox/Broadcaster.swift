@@ -38,7 +38,7 @@ public final class SingleSourceBroadcaster<T>: Broadcaster<T> {
 }
 
 public final class PassthroughBroadcaster<T>: Broadcaster<T> {
-    public init() {}
+    public override init() {}
     public func send(_ output: T) {
         data = output
     }
